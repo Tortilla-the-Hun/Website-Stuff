@@ -1,7 +1,7 @@
 body {
 	border: 2px black;
 	background-color: black;
-	color:#27F546;
+	color:#EBFCFC;
 	font-family: sans-serif;
 }
 
@@ -28,8 +28,9 @@ article {
 }
 
 p {
-	margin-left: 30px;
-	margin-right: 30px;
+	background-color: #141313;
+	border: 2px black;
+	border-radius: 5px;
 }
 
 ul {
@@ -46,7 +47,7 @@ li {
 }	
 li a {
 	display: block;
-	color: #27F546;
+	color: #EBFCFC;
 	text-align: center;
 	padding: 14px;
 	text-decoration: none;
