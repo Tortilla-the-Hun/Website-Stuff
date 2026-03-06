@@ -2,7 +2,7 @@ body {
 	border: 2px black;
 	background-color: black;
 	color:#27F546;
-	font-family: ui-monospace, monospace
+	font-family: sans-serif;
 }
 
 h1 {
@@ -58,7 +58,7 @@ header,footer {
 
 figure{
 	width: 25%;
-	padding: 2%;
+	padding: 5%;
 	float: left;
 }
 figure-image {
