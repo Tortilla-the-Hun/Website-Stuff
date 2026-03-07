@@ -8,19 +8,16 @@ body {
 h1 {
 	font-weight: bold;
 	margin-left: 20px;
-	margin-right: 20px;
 }
 
 h2 {
 	font-weight: 600;
 	margin-left: 20px;
-	margin-right: 20px;
 }
 
 h3 {
 	font-weight: 550;
 	margin-left: 25px;
-	margin-right: 25px;
 }
 
 article {
@@ -28,9 +25,11 @@ article {
 }
 
 p {
+	clear: both;
 	background-color: #141313;
 	border: 2px solid white;
 	border-radius: 5px;
+	text-align: left;
 }
 
 ul {
@@ -59,7 +58,8 @@ header,footer {
 
 figure{
 	width: 25%;
-	padding: 5%;
+	margin: 5px;-
+	padding: 2% 20px;
 	float: left;
 }
 figure-image {
