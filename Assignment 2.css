@@ -1,18 +1,23 @@
 body {
-	border: 2px black;
-	background-color: black;
+	border: 2px deepskyblue;
+	background: black;
 	color:#EBFCFC;
 	font-family: sans-serif;
 }
 
 h1 {
+	clear: left;
+	font-size: 40px;
+	text-align: left;
 	font-weight: bold;
 	margin-left: 20px;
+	font-family: roboto, serif;
 }
 
 h2 {
+	text-align: left;
 	font-weight: 600;
-	margin-left: 20px;
+	margin-left: 5px;
 }
 
 h3 {
@@ -20,16 +25,61 @@ h3 {
 	margin-left: 25px;
 }
 
+.wrapper {
+	position: relative;
+	max-width: 50%;
+	clear: left;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 10px;
+}
+
+.container {
+	padding: 15px;
+	clear: both;
+	column-count: 2;
+	column-width: 150px;
+	display: flex;
+}
+
+.multi-column-text {
+	columns: 3 auto;
+}
+
+
 article {
 	background-color: #141313;
 }
 
+
+
 p {
+	margin: 5% 50px;
 	clear: both;
 	background-color: #141313;
 	border: 2px solid white;
 	border-radius: 5px;
 	text-align: left;
+	max-width: 80ch;
+	font-size: 18px;
+	padding: 5px;
+}
+
+.first-p{
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5% 20px;
+	font-size: 18px;
+}
+
+.blockquote {
+	border: none;
+	clear: both;
+	text-align: center;
+	margin: auto;
+	font-size: 32px;
 }
 
 ul {
@@ -38,7 +88,6 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: #333333;
-	
 }
 
 li {
@@ -53,24 +102,37 @@ li a {
 }
 
 header,footer {
-	font-family: "Times New Roman;"
+	font-family: "Times New Roman", serif;
 }
 
 figure{
-	width: 25%;
-	margin: 5px;-
-	padding: 2% 20px;
+	max-width: 70%;
+	margin: auto;
 	float: left;
+	vertical-align: top;
 }
-figure-image {
-	width: 100%;
+
+.figure img {
+	max-width: 100%;
 	height: auto;
-	max-width: 400px;
-	object-fit: cover;
-	
+	display: block;
 }
+
+.video-container video {
+	width: 500px;
+	height: auto;
+	vertical-align: top;
+	display: flex;
+}
+
 table {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+}
+
+.iatf {
+	float: left;
+	clear: both;
+	max-width: 50%;
 }
