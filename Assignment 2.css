@@ -47,12 +47,9 @@ h3 {
 	columns: 3 auto;
 }
 
-
 article {
 	background-color: #141313;
 }
-
-
 
 p {
 	margin: 5% 50px;
@@ -72,6 +69,7 @@ p {
 	flex-wrap: wrap;
 	margin: 5% 20px;
 	font-size: 18px;
+	max-width: 80ch;
 }
 
 .blockquote {
@@ -82,23 +80,41 @@ p {
 	font-size: 32px;
 }
 
-ul {
+
+nav ul {
 	list-style-type: none;
 	margin-left: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333333;
+	background-color: darkblue;
+	justify-content: space-around;
+	text-align: center;
 }
 
 li {
 	float: left;
-}	
+}
 li a {
-	display: block;
+	display: inline-block;
 	color: #EBFCFC;
 	text-align: center;
 	padding: 14px;
 	text-decoration: none;
+	position: relative;
+}
+
+li a::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	margin-top: 5px;
+	transition: width 0.3s ease-in-out;
+}
+li a:hover {
+	color: blueviolet;
+	width: 100%;
+
 }
 
 header,footer {
@@ -131,8 +147,3 @@ table {
 	width: 80%;
 }
 
-.iatf {
-	float: left;
-	clear: both;
-	max-width: 50%;
-}
